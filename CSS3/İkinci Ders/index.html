@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css3 / İlk Ders "FRONTEND MASTERY(USTALIK)"</title>
+    <!-- SEO -->
+    <meta
+      name="keywords"
+      content="html5,css3,js,bootstrap5,tailwind css, react, jquery"
+    />
+
+    <!-- font awesome (ctr+k+c ile yorum satırının içine alabiliriz.)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --main-color: white;
+        --main-bgcolor: #000;
+      }
+
+      body {
+        background-color: var(--main-bgcolor);
+        color: var(--main-color);
+      }
+
+      .my_clerfix::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      #mycliph_path {
+        clip-path: polygon(55% 0, 100% 55%, 55% 100%, 0 50%);
+      }
+
+      /* div .one {
+        background-color: var(--main-color);
+        color: var(--main-bgcolor);
+      }
+
+      .one::before {
+        content: "Frontend";
+      }
+
+      .one::after {
+        content: "Node Js";
+      }
+
+      .one:hover {
+        color: blue;
+        background-color: green;
+      }
+
+      .one:nth-child(even) {
+        color: green;
+        background-color: blue;
+      } */
+
+      /* div ~ p {
+        /* "div ~ p" dersek eğer div ile ayni hizada kim varsa onu seçiyo ve işlem uygulanıyo 
+        color: blue;
+        background-color: green;
+      } */
+
+      div + p {
+        /* "div + p" dersek eğer div ile ayni hizada olan ilk kim varsa onu seçiyo ve işlem uygulanıyo */
+        color: blue;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- start codes -->
+    <p class="one">Lorem, ipsum dolor.</p>
+    <div>
+      <p class="one">Lorem.</p>
+      <p class="one">Lorem.</p>
+    </div>
+    <p class="one">Quisquam, accusantium aperiam!</p>
+    <p class="one">Quisquam, accusantium aperiam!</p>
+    <br />
+    <hr />
+    <hr />
+    <img src="../river-7721287_1280.jpg" alt="" id="mycliph_path" width="60%" />
+    <br /><br />
+    <hr />
+    <hr />
+    <img
+      src="../../../HTML5/images/istockphoto-1359585151-612x612.jpg"
+      alt=""
+      width="20%"
+      style="float: left"
+    />
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore
+      repellendus odio maiores. Beatae, vero!
+    </p>
+    <img
+      src="../../../HTML5/images/istockphoto-1359585151-612x612.jpg"
+      alt=""
+      width="20%"
+      style="float: right"
+    />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, inventore!
+    </p>
+    <img
+      src="../../../HTML5/images/istockphoto-1359585151-612x612.jpg"
+      alt=""
+      width="20%"
+      class="my_clerfix"
+    />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat architecto
+      voluptates fugit?
+    </p>
+    <!-- start end -->
+  </body>
+</html>
