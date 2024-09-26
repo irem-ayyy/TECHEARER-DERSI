@@ -1,0 +1,112 @@
+* {
+  background-color: black;
+  color: aliceblue;
+}
+
+/* my-gradient */
+.my-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(8, 114, 228, 0.1) 0%,
+    rgb(187, 248, 3) 75%,
+    rgb(241, 171, 8) 75%,
+    rgb(41, 233, 7) 100%
+  );
+  width: 90%;
+  height: 500px;
+}
+
+/* header-id */
+.header-id {
+  background-image: url(../river-7721287_1280.jpg);
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+/* button_id */
+.button_id {
+  background-color: #f00;
+  color: white;
+  padding: 1rem;
+  border-radius: 5%;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  transition: all 1.5s ease;
+}
+
+.button_id:hover {
+  background-color: white;
+  color: #f00;
+  transform: rotate(360deg);
+}
+
+/* my-responsive */
+.my-responsive {
+  border: 1px solid yellow;
+  display: inline-block;
+  height: 100px;
+  width: 100%;
+  background-color: blueviolet;
+}
+
+/* responsive */
+@media screen and (min-width: 768px) {
+  .my-responsive {
+    background-color: yellow;
+    color: black;
+    margin-bottom: 10px;
+    width: 49%;
+  }
+}
+
+@media screen and (min-width: 910px) {
+  .my-responsive {
+    width: 32%;
+    background-color: red;
+    color: black;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .my-responsive {
+    width: 24%;
+    background-color: orange;
+    color: black;
+    margin-bottom: 10px;
+  }
+}
+
+/* flex container */
+.flex_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
+
+.flex_item {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f00;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  text-shadow: 0.5px -0.6px 5px white;
+  border-radius: 50%;
+  box-shadow: 10px 1px 10px 1px rgba(255, 255, 255);
+  flex: 1;
+}
